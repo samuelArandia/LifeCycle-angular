@@ -1,0 +1,11 @@
+<p>product works!</p>
+
+
+<products-price
+  *ngIf="isProductAvailable"
+  [price]="price"
+></products-price>
+
+<button (click)="isProductAvailable=!isProductAvailable"> toggle </button>
+
+<button (click)="increasePrice()"> Price +100</button>
